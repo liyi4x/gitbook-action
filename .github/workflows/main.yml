@@ -1,0 +1,19 @@
+name: 'Gitbook-Action'
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout action
+      uses: actions/checkout@v1
+
+    - name: Gitbook Action
+      uses: liyi4x/gitbook-action
+      with:
+        token: ${{ secrets.TOKEN }}
+        time_zone: Asia/Shanghai   # set time zone
