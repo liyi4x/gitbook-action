@@ -13,7 +13,7 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Gitbook Action
-      uses: liyi4x/gitbook-action
+      uses: liyi4x/gitbook-action@tv1
       with:
         token: ${{ secrets.TOKEN }}
         time_zone: Asia/Shanghai   # set time zone
